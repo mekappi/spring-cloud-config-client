@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: foo
+  profiles:
+    active: development
+  cloud:
+    config:
+      # ConfigServerのURI
+      uri: http://localhost:8880
+      # ConfigServerに接続できなかった時にExceptionを発生させたいならtrueにする (defaultはfalse)
+      fail-fast: true
